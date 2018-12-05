@@ -1,0 +1,62 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <title>vis</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+    <!-- CSS concatenated and minified via ant build script-->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- end CSS-->
+
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+
+  <div class="well">
+    <img src="/img/bww.png" align="right"/>
+    <header>
+        <h3>Welcome to NLU Webinar MAIN! </h3>
+    </header>
+    <form method="POST" enctype="multipart/form-data" action="/fileUpload">
+        <table>
+            <tr>
+              <td>Upload a file:</td><td><input type="file" name="file" /></td>
+              <td><input type="submit" value="Upload" /></td>
+            </tr>
+        </table>
+    </form>
+  </div>
+
+    <footer>
+        <p><a href="https://github.com/vlandham/bubble_cloud">Bubble Cloud - Github</a> | <a href="https://www.ibm.com/watson/services/natural-language-understanding/">Watson NLU</a></p>
+    </footer>
+<div id="container" class="container">
+</div> <!--! end of #container -->
+
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+
+<script defer src="js/plugins.js"></script>
+<script src="js/libs/coffee-script.js"></script>
+<script src="js/libs/d3.min.js"></script>
+<script type="text/coffeescript" src="coffee/vis.coffee"></script>
+<script type="text/javascript">
+</script>
+
+</body>
+</html>
