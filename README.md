@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.org/IBM/visualize-unstructured-content-with-watson.svg?branch=master)](https://travis-ci.org/IBM/visualize-unstructured-content-with-watson)
+[![Build Status](https://travis-ci.org/IBM/visualize-unstructured-content-with-watson.svg?branch=master)](https://travis-ci.org/IBM/visualize-unstructured-content-with-watson)
 
 !!! WORK IN PROGRESS !!!
 
