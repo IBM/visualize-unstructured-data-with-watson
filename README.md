@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/IBM/visualize-unstructured-content-with-watson.svg?branch=master)](https://travis-ci.org/IBM/visualize-unstructured-content-with-watson)
+[![Build Status](https://travis-ci.org/IBM/visualize-unstructured-text-with-watson.svg?branch=master)](https://travis-ci.org/IBM/visualize-unstructured-text-with-watson)
 
 !!! WORK IN PROGRESS !!!
 
-# Visualize Unstructured Content Using Watson Natural Language Understanding
+# Visualize Unstructured Text Using Watson Natural Language Understanding
 
 Spring Boot app which allows user to upload a file and see Watson NLU results for that document in a bubble cloud.
 
@@ -44,10 +44,10 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ### 1. Clone the repo
 
-Clone the `visualize-unstructured-content-with-watson` repo locally. In a terminal, run:
+Clone the `visualize-unstructured-text-with-watson` repo locally. In a terminal, run:
 
 ```
-$ git clone https://github.com/IBM/visualize-unstructured-content-with-watson
+$ git clone https://github.com/IBM/visualize-unstructured-text-with-watson
 ```
 
 ### 2. Create Watson services with IBM Cloud
@@ -97,7 +97,7 @@ From the home page, you will be prompted to choose a file from your local system
 
 ![](doc/source/images/home-page.png)
 
-Select a file and press the `Upload` button. In this example, the file "The Raven.docx" was selected from the `data/examples` folder:
+Select a file and press the `Upload` button. In this example, the file "The Raven.pdf" was selected from the `data/examples` folder:
 
 ![](doc/source/images/raven-concepts.png)
 
