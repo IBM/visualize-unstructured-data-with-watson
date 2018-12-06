@@ -18,11 +18,8 @@ import org.springframework.web.multipart.MultipartFile;
 @Controller
 public class AppController {
 
-	NaturalLanguageUnderstanding service = new NaturalLanguageUnderstanding(
-			NaturalLanguageUnderstanding.VERSION_DATE_2017_02_27,
-			NLUCredentials.USER_NAME,
-			NLUCredentials.PASSWORD
-			);
+	NLUService nluService = new NLUService();
+	NaturalLanguageUnderstanding service = nluService.getService();
 
 	@PostMapping("/fileUpload")
 	public String handleFileUpload(@RequestParam("file") MultipartFile file,
