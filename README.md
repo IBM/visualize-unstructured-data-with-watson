@@ -60,33 +60,26 @@ Create the following services:
 
 The credentials for IBM Cloud services, can be found in the ``Services`` menu in IBM Cloud, by selecting the ``Service Credentials`` option for each service.
 
-Copy the [`env.sample`](env.sample) to `.env`.
+Use those values to update the config.properties file located in the `src/main/resources` directory. Replace the default values with the appropriate credentials (either API key, or username/password). Note that quotes are not required.
 
 ```
-$ cp env.sample .env
-```
-Edit the `.env` file with the necessary settings.
-
-#### `env.sample:`
-
-```
-# Replace the credentials here with your own.
-# Rename this file to .env before starting the app.
-
 # Watson Natural Language Understanding
-NATURAL_LANGUAGE_UNDERSTANDING_USERNAME=<add_nlu_username>
-NATURAL_LANGUAGE_UNDERSTANDING_PASSWORD=<add_nlu_password>
+NATURAL_LANGUAGE_UNDERSTANDING_URL=https://gateway.watsonplatform.net/natural-language-understanding/api
+## Un-comment and use either username+password or IAM apikey.
+NATURAL_LANGUAGE_UNDERSTANDING_IAM_APIKEY=<add_nlu_iam_apikey>
+#NATURAL_LANGUAGE_UNDERSTANDING_USERNAME=<add_nlu_username>
+#NATURAL_LANGUAGE_UNDERSTANDING_PASSWORD=<add_nlu_password>
 ```
 
 ### 6. Run the application
 
-1. Build and package the Java app by running the following Maven command:
+1. Install and package the Java app by running the following Maven command:
 
 ```
-mvn clean package
+mvn clean install
 ```
 
-> Note: if you do not already have Maven installed and configured locally, you can substitute the `mvn` portion of the command with either `./mvnw` (on Linux or Mac), or `mvnw.cmd` (on Windows). This will run a version of Maven that has been setup for only this github repo.
+> Note: if you do not already have Maven installed and configured locally, you can substitute the `mvn` portion of the command with either `./mvnw` (on Linux or Mac), or `mvnw.cmd` (on Windows). This will run a version of Maven that has been setup for only this repo.
 
 2. Start the app by running:
 
