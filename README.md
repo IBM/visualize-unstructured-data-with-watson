@@ -60,7 +60,7 @@ Create the following services:
 
 The credentials for IBM Cloud services, can be found in the ``Services`` menu in IBM Cloud, by selecting the ``Service Credentials`` option for each service.
 
-Use those values to update the config.properties file located in the `src/main/resources` directory. Replace the default values with the appropriate credentials (either API key, or username/password). Note that quotes are not required.
+Use those values to update the `config.properties` file located in the `src/main/resources` directory. Replace the default values with the appropriate credentials (either API key, or username/password). Note that quotes are not required.
 
 ```
 # Watson Natural Language Understanding
@@ -93,15 +93,17 @@ java -jar target/nlu-visual-1.0.jar
 
 # Sample output
 
-![](doc/source/images/sample_output.png)
+From the home page, you will be prompted to choose a file from your local system:
 
-# Troubleshooting
+![](doc/source/images/home-page.png)
 
-* Error: Environment {GUID} is still not active, retry once status is active
+Select a file and press the `Upload` button. In this example, the file "The Raven.docx" was selected from the `data/examples` folder:
 
-  > This is common during the first run. The app tries to start before the Discovery
-environment is fully created. Allow a minute or two to pass. The environment should
-be usable on restart. If you used `Deploy to IBM Cloud` the restart should be automatic.
+![](doc/source/images/raven-concepts.png)
+
+If you click on the `Sentiments` tab, you will see:
+
+![](doc/source/images/raven-sentiments.png)
 
 ## License
 

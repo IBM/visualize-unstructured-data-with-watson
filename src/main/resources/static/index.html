@@ -24,32 +24,28 @@
 
 <body>
 
-
-  <div class="well">
-    <img src="/img/bww.png" align="right"/>
+<div>
     <header>
-        <h3>Welcome to NLU Webinar MAIN! </h3>
+        <h3>Welcome to NLU Visualization using D3!</h3>
     </header>
-    <form method="POST" enctype="multipart/form-data" action="/fileUpload">
-        <table>
-            <tr>
-              <td>Upload a file:</td><td><input type="file" name="file" /></td>
-              <td><input type="submit" value="Upload" /></td>
-            </tr>
-        </table>
-    </form>
-  </div>
 
-    <footer>
-        <p><a href="https://github.com/vlandham/bubble_cloud">Bubble Cloud - Github</a> | <a href="https://www.ibm.com/watson/services/natural-language-understanding/">Watson NLU</a></p>
-    </footer>
+    <div id="well">
+        <form method="POST" enctype="multipart/form-data" action="/fileUpload">
+            <table>
+                <tr>
+                    <td>Upload a file:</td><td><input type="file" name="file" /></td>
+                    <td><input type="submit" value="Upload" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
 <div id="container" class="container">
 </div> <!--! end of #container -->
 
-
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-
 
 <script defer src="js/plugins.js"></script>
 <script src="js/libs/coffee-script.js"></script>

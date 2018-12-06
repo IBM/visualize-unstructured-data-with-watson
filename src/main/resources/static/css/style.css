@@ -95,3 +95,22 @@ footer p {
   padding-bottom:20px;
   font: 13px sans-serif;
 }
+
+label {
+  display: inline;
+  vertical-align: middle;
+}
+
+input[type="file"] {
+  line-height: 0px;
+  width: 300px;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  margin-left: 40px;
+}
+
+table {
+  margin-left: 20px;
+}
