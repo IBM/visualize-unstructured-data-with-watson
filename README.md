@@ -44,7 +44,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ### 1. Clone the repo
 
-Clone the `watson-banking-chatbot` locally. In a terminal, run:
+Clone the `visualize-unstructured-content-with-watson` repo locally. In a terminal, run:
 
 ```
 $ git clone https://github.com/IBM/visualize-unstructured-content-with-watson
