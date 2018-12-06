@@ -56,7 +56,7 @@ Create the following services:
 
 * [**Watson Natural Language Understanding**](https://console.ng.bluemix.net/catalog/services/natural-language-understanding)
 
-### 5. Configure credentials
+### 3. Configure credentials
 
 The credentials for IBM Cloud services, can be found in the ``Services`` menu in IBM Cloud, by selecting the ``Service Credentials`` option for each service.
 
@@ -71,7 +71,7 @@ NATURAL_LANGUAGE_UNDERSTANDING_IAM_APIKEY=<add_nlu_iam_apikey>
 #NATURAL_LANGUAGE_UNDERSTANDING_PASSWORD=<add_nlu_password>
 ```
 
-### 6. Run the application
+### 4. Run the application
 
 1. Install and package the Java app by running the following Maven command:
 
