@@ -1,4 +1,4 @@
-<!-- [![Build Status](https://travis-ci.org/IBM/watson-banking-chatbot.svg?branch=master)](https://travis-ci.org/IBM/watson-banking-chatbot) -->
+![Build Status](https://travis-ci.org/IBM/visualize-unstructured-content-with-watson.svg?branch=master)](https://travis-ci.org/IBM/visualize-unstructured-content-with-watson)
 
 !!! WORK IN PROGRESS !!!
 
@@ -21,7 +21,6 @@ When the reader has completed this Code Pattern, they will understand how to:
 * [goal 3]
 * [goal 4]
 
-<!--add an image in this path-->
 ![](doc/source/images/architecture.png)
 
 ## Flow
