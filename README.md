@@ -2,7 +2,7 @@
 
 # Visualize Unstructured Text Using Watson Natural Language Understanding
 
-In this Code Pattern, we will create a web app for visualizing unstructured text using Watson Natural Understanding, Apache Tika, and D3.js. After a user uploads a local document of their choosing, the application leverages Apache Tika to extract text from the document. The text is then passed through Watson Natural Language Understanding, where entities and concepts are extracted. Finally, the application uses the D3.js library as a visualization tool to display the results to the user.
+In this Code Pattern, we will create a web app for visualizing unstructured text using Watson Natural Understanding, Apache Tika, and D3.js. After a user uploads a local document of their choosing, the application leverages Apache Tika to extract text from the unstructured document. The text is then passed through Watson Natural Language Understanding, where entities and concepts are extracted. Finally, the application uses the D3.js library as a visualization tool to display the results to the user.
 
 The main benefit of using the Watson Natural Understanding Service is its powerful analytics engine that provides cognitive enrichments and insights into your data. The key enrichments that are extracted include:
 
@@ -16,7 +16,7 @@ The enrichments will be displayed using D3.js, a JavaScript library that provide
 When the reader has completed this Code Pattern, they will understand how to:
 
 * Create and use an instance of Watson Natural Language Understanding
-* Leverage Apache Tika for text extraction
+* Leverage Apache Tika to extract text from unstructured files
 * Use D3.js for displaying the visuals
 
 ![](doc/source/images/architecture.png)
@@ -99,7 +99,7 @@ java -jar target/nlu-visual-1.0.jar
 
 3. Browse to `http://localhost:8080` to see the app.
 
-4. To start the visualization process, select and upload a document from your local file system. The file can be in `.doc`, `.docx`, `.txt`, or `.pdf` format. For your convenience, we have included 2 sample poems located in the [data](/data) subdirectory of this repo. 
+4. To start the visualization process, select and upload a document from your local file system. Note that while Apache Tika supports over a thousand different files types, this app has only been tested using a small set of standard document type formats. For your convenience, we have included a few sample poems located in the [data](/data) subdirectory of this repo.
 
 # Sample output
 
@@ -107,7 +107,7 @@ From the home page, you will be prompted to choose a file from your local system
 
 ![](doc/source/images/home-page.png)
 
-Select a file and press the `Upload` button. In this example, the file "The Raven.pdf" was selected from the `data/examples` folder:
+Select a file and press the `Upload` button. In this example, the file "The Raven.pdf" was selected from the `data` folder:
 
 ![](doc/source/images/raven-concepts.png)
 
