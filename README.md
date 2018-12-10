@@ -1,25 +1,23 @@
 [![Build Status](https://travis-ci.org/IBM/visualize-unstructured-text-with-watson.svg?branch=master)](https://travis-ci.org/IBM/visualize-unstructured-text-with-watson)
 
-!!! WORK IN PROGRESS !!!
-
 # Visualize Unstructured Text Using Watson Natural Language Understanding
 
-Spring Boot app which allows user to upload a file and see Watson NLU results for that document in a bubble cloud.
+In this Code Pattern, we will create a web app for visualizing unstructured text using Watson Natural Understanding, Apache Tika, and D3.js. After a user uploads a local document of their choosing, the application leverages Apache Tika to extract text from the document. The text is then passed through Watson Natural Language Understanding, where entities and concepts are extracted. Finally, the application uses the D3.js library as a visualization tool to display the results to the user.
 
-Configure your Watson NLU username and password in NLUCredentials.java.
+The main benefit of using the Watson Natural Understanding Service is its powerful analytics engine that provides cognitive enrichments and insights into your data. The key enrichments that are extracted include:
 
-App uses Apache Tika to extract text from documents. https://tika.apache.org/1.16/formats.html
+* **Concepts**: identified general concepts that aren't necessarily referenced in the data.
+* **Keywords**: important topics typically used to index or search the data.
+* **Entities**: people, companies, organizations, cities, and more.
+* **Sentiment**: the overall positive or negative sentiment of the document.
 
-Excellent resource on bubble cloud by Jim Vallandingham here: http://vallandingham.me/building_a_bubble_cloud.html
-
-In this Code Pattern, we will [create something] using [technologies] and [components]. [Explain briefly how things work]. [Give acknowledgements to others if necessary]
+The enrichments will be displayed using D3.js, a JavaScript library that provides  powerful visualization techniques that helps bring data to life. In this app, we will use it to display each of the enrichments in a bubble, with its size and location determined by its relative significance in the document.
 
 When the reader has completed this Code Pattern, they will understand how to:
 
-* [goal 1]
-* [goal 2]
-* [goal 3]
-* [goal 4]
+* Create and use an instance of Watson Natural Language Understanding
+* Leverage Apache Tika for text extraction
+* Use D3.js for displaying the visuals
 
 ![](doc/source/images/architecture.png)
 
@@ -73,13 +71,25 @@ NATURAL_LANGUAGE_UNDERSTANDING_IAM_APIKEY=<add_nlu_iam_apikey>
 
 ### 4. Run the application
 
-1. Install and package the Java app by running the following Maven command:
+#### Pre-requisite
+
+Maven >= 3.5 is used to build, test, and run the app. Check your maven version using the following command:
+
+```
+mvn -v
+```
+
+To download and install maven, click [here](https://maven.apache.org/download.cgi).
+
+> Note: If you would prefer not to download Maven, you can substitute the `mvn` portion of any Maven command with either `./mvnw` (on Linux or Mac), or `mvnw.cmd` (on Windows). This will run a pre-installed local version of Maven that is included in this repo.
+
+#### Build and Run the app
+
+1. Install and package the Java app by running the following Maven command (remember, you can substitute `mvn` with `mnvw` if you do not have Maven installed):
 
 ```
 mvn clean install
 ```
-
-> Note: if you do not already have Maven installed and configured locally, you can substitute the `mvn` portion of the command with either `./mvnw` (on Linux or Mac), or `mvnw.cmd` (on Windows). This will run a version of Maven that has been setup for only this repo.
 
 2. Start the app by running:
 
