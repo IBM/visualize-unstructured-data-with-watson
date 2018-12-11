@@ -1,17 +1,17 @@
-[![Build Status](https://travis-ci.org/IBM/visualize-unstructured-text-with-watson.svg?branch=master)](https://travis-ci.org/IBM/visualize-unstructured-text-with-watson)
+[![Build Status](https://travis-ci.org/IBM/visualize-unstructured-data-with-watson.svg?branch=master)](https://travis-ci.org/IBM/visualize-unstructured-data-with-watson)
 
-# Visualize Unstructured Text Using Watson Natural Language Understanding
+# Visualize Unstructured Data Using Watson Natural Language Understanding
 
-In this Code Pattern, we will create a web app for visualizing unstructured text using Watson Natural Understanding, Apache Tika, and D3.js. After a user uploads a local document of their choosing, the application leverages Apache Tika to extract text from the unstructured document. The text is then passed through Watson Natural Language Understanding, where entities and concepts are extracted. Finally, the application uses the D3.js library as a visualization tool to display the results to the user.
+In this Code Pattern, we will create a web app for visualizing unstructured data using Watson Natural Understanding, Apache Tika, and D3.js. After a user uploads a local file of their choosing, the application leverages Apache Tika to extract text from the unstructured data file. The text is then passed through Watson Natural Language Understanding, where entities and concepts are extracted. Finally, the application uses the D3.js library as a visualization tool to display the results to the user.
 
 The main benefit of using the Watson Natural Understanding Service is its powerful analytics engine that provides cognitive enrichments and insights into your data. The key enrichments that are extracted include:
 
-* **Concepts**: identified general concepts that aren't necessarily referenced in the data.
-* **Keywords**: important topics typically used to index or search the data.
 * **Entities**: people, companies, organizations, cities, and more.
-* **Sentiment**: the overall positive or negative sentiment of the document.
+* **Keywords**: important topics typically used to index or search the data.
+* **Concepts**: identified general concepts that aren't necessarily referenced in the data.
+* **Sentiment**: the overall positive or negative sentiment of the data.
 
-The enrichments will be displayed using D3.js, a JavaScript library that provides  powerful visualization techniques that helps bring data to life. In this app, we will use it to display each of the enrichments in a bubble, with its size and location determined by its relative significance in the document.
+The enrichments will be displayed using D3.js, a JavaScript library that provides  powerful visualization techniques that helps bring data to life. In this app, we will use it to display each of the enrichments in an interactive bubble cloud, with each elements size and location determined by its relative significance.
 
 When the reader has completed this Code Pattern, they will understand how to:
 
@@ -24,9 +24,9 @@ When the reader has completed this Code Pattern, they will understand how to:
 ## Flow
 
 1. User configures credentials for the Watson NLU service and starts the app.
-2. User selects document file to proecess and load.
-3. Document text is extracted using Apache Tika.
-4. Extracted data is passed to Watson NLU for enrichment.
+2. User selects data file to proecess and load.
+3. Text is extracted from the data file using Apache Tika.
+4. Extracted text is passed to Watson NLU for enrichment.
 5. Enriched data is visualized in the UI using the D3.js library.
 
 # Watch the Video
@@ -42,10 +42,10 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ### 1. Clone the repo
 
-Clone the `visualize-unstructured-text-with-watson` repo locally. In a terminal, run:
+Clone the `visualize-unstructured-data-with-watson` repo locally. In a terminal, run:
 
 ```
-$ git clone https://github.com/IBM/visualize-unstructured-text-with-watson
+$ git clone https://github.com/IBM/visualize-unstructured-data-with-watson
 ```
 
 ### 2. Create Watson services with IBM Cloud
@@ -99,7 +99,7 @@ java -jar target/nlu-visual-1.0.jar
 
 3. Browse to `http://localhost:8080` to see the app.
 
-4. To start the visualization process, select and upload a document from your local file system. Note that while Apache Tika supports over a thousand different files types, this app has only been tested using a small set of standard document type formats. For your convenience, we have included a few sample poems located in the [data](/data) subdirectory of this repo.
+4. To start the visualization process, select and upload a data file from your local file system. Note that while Apache Tika supports over a thousand different files types, this app has only been tested using a small set of standard document type formats. For your convenience, we have included a few sample poems located in the [data](/data) subdirectory of this repo.
 
 # Sample output
 
