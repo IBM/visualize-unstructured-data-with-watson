@@ -31,7 +31,9 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 # Watch the Video
 
-!!! COMING 
+This video is from a webinar produced for the "Building With Watson" series.
+
+[![](http://img.youtube.com/vi/rqKPQNyl6Xk/0.jpg)](http://www.youtube.com/watch?v=rqKPQNyl6Xk "")
 
 # Steps
 
