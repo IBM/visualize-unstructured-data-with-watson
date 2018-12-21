@@ -54,7 +54,7 @@ git clone https://github.com/IBM/visualize-unstructured-data-with-watson
 
 Create the following services:
 
-* [**Watson Natural Language Understanding**](https://console.ng.bluemix.net/catalog/services/natural-language-understanding)
+* [**Watson Natural Language Understanding**](https://cloud.ibm.com/catalog/services/natural-language-understanding)
 
 ## 3. Configure credentials
 
