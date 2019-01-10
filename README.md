@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/IBM/visualize-unstructured-data-with-watson.svg?branch=master)](https://travis-ci.org/IBM/visualize-unstructured-data-with-watson)
+[![Build Status](https://api.travis-ci.org/IBM/visualize-unstructured-data-with-watson.svg?branch=master)](https://travis-ci.org/IBM/visualize-unstructured-data-with-watson)
 
 # Visualize Unstructured Data Using Watson Natural Language Understanding
 
@@ -33,7 +33,7 @@ When the reader has completed this code pattern, they will understand how to:
 
 This video is from a webinar produced for the "Building With Watson" series.
 
-[![video](http://img.youtube.com/vi/rqKPQNyl6Xk/0.jpg)](http://www.youtube.com/watch?v=rqKPQNyl6Xk "")
+[![video](https://img.youtube.com/vi/rqKPQNyl6Xk/0.jpg)](http://www.youtube.com/watch?v=rqKPQNyl6Xk "")
 
 # Steps
 
@@ -54,7 +54,7 @@ git clone https://github.com/IBM/visualize-unstructured-data-with-watson
 
 Create the following services:
 
-* [**Watson Natural Language Understanding**](https://console.ng.bluemix.net/catalog/services/natural-language-understanding)
+* [**Watson Natural Language Understanding**](https://cloud.ibm.com/catalog/services/natural-language-understanding)
 
 ## 3. Configure credentials
 
@@ -119,6 +119,6 @@ If you click on the `Sentiments` tab, you will see:
 
 ## License
 
-This code pattern is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache License FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache License FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
