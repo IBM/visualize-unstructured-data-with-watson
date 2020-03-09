@@ -12,7 +12,7 @@ class NLUService {
 	private String apikey = "<apikey>";
 	private boolean useIamApiKey = false;
 	private NaturalLanguageUnderstanding service = null;
-	private String versionDate = "2018-09-21";
+	private String versionDate = "2019-07-12";
 
 	/**
 	 * Return NLU service
