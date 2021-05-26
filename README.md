@@ -64,7 +64,7 @@ Use those values to update the `config.properties` file located in the `src/main
 
 ```bash
 # Watson Natural Language Understanding
-NATURAL_LANGUAGE_UNDERSTANDING_URL=https://gateway.watsonplatform.net/natural-language-understanding/api
+NATURAL_LANGUAGE_UNDERSTANDING_URL=<add_nlu_url>
 ## Un-comment and use either username+password or IAM apikey.
 NATURAL_LANGUAGE_UNDERSTANDING_IAM_APIKEY=<add_nlu_iam_apikey>
 #NATURAL_LANGUAGE_UNDERSTANDING_USERNAME=<add_nlu_username>
